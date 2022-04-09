@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+    <h1>Numbers</h1>
+   <ul>
+    <% if(ID % 2==0) { %>
+        <h1>Par</h1>
+        <% for(let i = 1; i <= ID*2; i++){ %>
+            <li>ES PAR</li>
+        <% } %>
+        <% } else{ %>
+        <h1>Impar</h1>
+        <% for(let i = 1; i <= ID; i++){ %>
+            <li>ES IMPAR</li>
+        <% } %>
+      <% } %>
+    </ul>
+</body>
+</html>
